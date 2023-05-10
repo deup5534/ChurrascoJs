@@ -1,0 +1,23 @@
+body#flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    background-image: url(https://thumbs.gfycat.com/WindingDisgustingIcelandichorse-size_restricted.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    
+}
+.col-12{
+    margin-top: 10%;
+}
+h1{
+    text-decoration: underline;
+}
+.col-11{
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
