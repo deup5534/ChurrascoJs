@@ -8,26 +8,90 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006254.png">
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body id="flex" >
-    <h1>ChurrascoJs</h1>
-    <form>
-        <div class="col-12">
-        <label for="adultosAlcool">Adultos que CONSOMEM bebidas alcoólicas:</label>
-        <input type="text" name="adultosAlcool" id="adultosAlcool" placeholder="Quantidade"></div>
-        
-        <div class="col-12">
-            <label for="adultosSobrios">Adultos que NÃO consomem bebidas alcoólicas:</label>
-            <input type="text" name="adultosSobrios" id="adultosSobrios" placeholder="Quantidade">
+<body>
+    <!--Cardápio-->
+    <h1>
+        Tabela com quantidade e preço:
+    </h1>
+       <table class="estiloConteúdo1">
+           <thead>
+               <tr>
+                   <th id="t">Item</th>
+                   <th id="t">Por adulto</th>
+                   <th id="t">Por criança</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Carne</td>
+                    <td>400 g</td>
+                    <td>200 g</td>
+                </tr>
+                <tr>
+                    <td>Acompanhamento</td>
+                    <td>200 g</td>
+                    <td>200 g</td>
+                </tr>
+                <tr>
+                    <td>Cerveja</td>
+                    <td>2 L</td>
+                    <td>------</td>
+                </tr>
+                <tr>
+                    <td>Refrigerante</td>
+                    <td>500 ml</td>
+                    <td>500 ml</td>
+                </tr>
+                <tr>
+                    <td>Água</td>
+                    <td>400 ml</td>
+                    <td>400 ml</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <!--Pedidos-->
+        <h1>
+            Pedido:
+        </h1>
+        <form class="estiloConteúdo2" action="">
+            <div class="col-12"></div>
+            <label for="AB">Adultos (que consomem bebidas alcoólicas)...:</label>
+            <input type="number" name="numero" id="adultobebe" min="0">
         </div>
-        
-        <div class="col-11">
-            <label for="crianca">Crianças:</label>
-            <input type="text" name="crianca" id="crianca" placeholder="Quantidade">
-        </div>
-           
-    </form>
-    
+          
+              <div class="col-12">
+          <label for="ANB">Adultos (que não consomem bebidas alcoólicas)..:</label>
+          <input type="number" name="numero" id="adultonbebe" min="0">
+              </div>
+          
+              <div class="col-12">
+          <label for="C">Crianças...............................................................:</label>
+          <input type="number" name="numero" id="crianca" min="0">
+              </div>
+      </form>
+    <!--A conta-->
+
+    <hr>
+    <h1>Total da conta:</h1>
+    <div id="carne">
+      Carne:
+    </div>
+    <div id="acompanhamento">
+      Acompanhamento:
+    </div>
+    <div id="cerveja">
+      Cerveja:
+    </div>
+    <div id="refrigerante">
+      Refrigerante:
+    </div>
+    <div id="agua">
+      Água:
+    </div>
+
+
+
     <script src="index.js"></script>
-    <a href="https://github.com/deup5534" target="blank">Thiago Bezerra ©</a>
 </body>
 </html>
